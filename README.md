@@ -3,7 +3,7 @@
 I've been writing code since the '70s and things have gone through
 a number of changes since then, to say the least. From machine code
 to assembly to early compilers, coding standards and practices up
-to the present day where a new paradighm is emerging in the form of
+to the present day where a new paradigm is emerging in the form of
 LLM models focused on generating and analysing code.
 
 All of this has been change, relentless change, and you probably should
@@ -11,13 +11,13 @@ not be in the software business if you are not quick to adapt to
 the pace of technology.
 
 As a certified old fart, I was very sceptical of the idea of LLMs
-generating code, to a degree, remain so. Computational linguistics
+generating code, and to a degree, remain so. Computational linguistics
 was very definitely a thing when I started my career, we founded the
 Manchester Aristotelian Society in the '80s to discuss philosophy
 with a group of computational linguists who were using Prolog to
 translate to and from Japanese.
 
-Using Prolog for langauge was a highly Asimovian aproach to the problem.
+Using Prolog for language was a highly Asimovian aproach to the problem.
 Every detail needed to be worked out by hand, every rule of grammar
 raked over and converted to statements. The idea of doing this with
 neural networks would have seemed crazy as the memory and computational
@@ -30,7 +30,7 @@ I'm going to do a little experiment using the default settings of
 the copilot extension to VS Code to see if we can actually write
 something that works.
 
-Note that I'm not an expert at this, not doubt there will be others
+Note that I'm not an expert at this, no doubt there will be others
 who have done little else for the last few years who can speak more
 confidently about how to do this. There are also a myriad of YouTube
 videos to help you on your way.
@@ -131,7 +131,7 @@ be subject to copyright however.
 ## Step 2, A chess piece and board square.
 
 Lets define an `enum` for a chess square. We will include a blank square so that we don't need to
-use and `Option` for blank squares.
+use an `Option` for blank squares.
 
 The query `> define an enum for chess pieces with colour and a blank square` was disappointing 
 and the answer was quite verbose.
