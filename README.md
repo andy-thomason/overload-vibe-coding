@@ -35,7 +35,7 @@ who have done little else for the last few years who can speak more
 confidently about how to do this. There are also a myriad of YouTube
 videos to help you on your way.
 
-We're using Rust for this as it is the language that I teach and
+ We're using Rust for this as it is the language that I teach and
 is increasingly the choice for startups and new projects and even a
 few legacy ones like Linux. If you are looking to book a training course
 in Rust for your existing C++ teams then this is a shameless plug.
@@ -125,12 +125,12 @@ The plan it generated looks like this:
 //! etc.
 ```
 
-This sounds credible, so lets proceed. We should be cautious of the origins of such text as it may
+This sounds credible, so let's proceed. We should be cautious of the origins of such text as it may
 be subject to copyright however.
 
 ## Step 2, A chess piece and board square.
 
-Lets define an `enum` for a chess square. We will include a blank square so that we don't need to
+Let's define an `enum` for a chess square. We will include a blank square so that we don't need to
 use and `Option` for blank squares.
 
 The query `> define an enum for chess pieces with colour and a blank square` was disappointing 
@@ -227,7 +227,7 @@ impl Square {
 }
 ```
 
-And now lets show the board and next player:
+And now let's show the board and next player:
 
 ```Rust
 // > implement Display for GameState with labeled rows and columns
@@ -254,7 +254,7 @@ impl fmt::Display for GameState {
 }
 ```
 
-Lets convert strings into squares. This is a bit of a hacky solution
+Let's convert strings into squares. This is a bit of a hacky solution
 as we could have parsed the chars and `to_uppercase()` allocates memory
 which is a no-no in system languages.
 
@@ -274,7 +274,7 @@ impl FromStr for Square {
 }
 ```
 
-Test generation did a lot more work that I asked and made a number of tests for `Square`.
+Test generation did a lot more work than I asked and made a number of tests for `Square`.
 
 ```Rust
 // > test that to_row_col returns (0,0) for A1
